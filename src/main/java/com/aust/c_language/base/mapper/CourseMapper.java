@@ -1,6 +1,6 @@
-package com.briup.c_language.base.mapper;
+package com.aust.c_language.base.mapper;
 
-import com.briup.c_language.base.domain.Course;
+import com.aust.c_language.base.domain.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

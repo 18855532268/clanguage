@@ -1,4 +1,4 @@
-package com.briup.c_language.base.vo;
+package com.aust.c_language.base.vo;
 
 import lombok.*;
 

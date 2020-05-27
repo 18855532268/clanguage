@@ -1,7 +1,7 @@
-package com.briup.c_language.base.vo;
+package com.aust.c_language.base.vo;
 
 
-import com.briup.c_language.base.constant.ReturnConstant;
+import com.aust.c_language.base.constant.ReturnConstant;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 

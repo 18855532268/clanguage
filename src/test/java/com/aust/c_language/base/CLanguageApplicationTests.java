@@ -1,10 +1,9 @@
-package com.briup.c_language.base;
+package com.aust.c_language.base;
 
-import com.briup.c_language.base.domain.Course;
-import com.briup.c_language.base.mapper.CourseMapper;
+import com.aust.c_language.base.domain.Course;
+import com.aust.c_language.base.mapper.CourseMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import com.alibaba.fastjson.JSONObject;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

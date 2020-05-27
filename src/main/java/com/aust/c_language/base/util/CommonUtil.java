@@ -1,7 +1,7 @@
-package com.briup.c_language.base.util;
+package com.aust.c_language.base.util;
 
 
-import com.briup.c_language.base.constant.Constants;
+import com.aust.c_language.base.constant.Constants;
 import org.apache.commons.lang.StringUtils;
 
 import javax.sound.sampled.AudioFileFormat;

@@ -1,4 +1,4 @@
-package com.briup.c_language.base.util;
+package com.aust.c_language.base.util;
 
 import java.util.ArrayList;
 import java.util.Collections;

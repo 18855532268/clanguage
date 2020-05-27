@@ -1,4 +1,4 @@
-package com.briup.c_language.base.exception;
+package com.aust.c_language.base.exception;
 
 /**
  * 程序错误信息

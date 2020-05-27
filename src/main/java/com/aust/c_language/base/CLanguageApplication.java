@@ -1,4 +1,4 @@
-package com.briup.c_language.base;
+package com.aust.c_language.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

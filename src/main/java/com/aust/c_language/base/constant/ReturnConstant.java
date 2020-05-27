@@ -1,4 +1,4 @@
-package com.briup.c_language.base.constant;
+package com.aust.c_language.base.constant;
 
 /**
  * 返回内容的成功与否

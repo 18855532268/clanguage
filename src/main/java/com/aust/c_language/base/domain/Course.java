@@ -1,4 +1,4 @@
-package com.briup.c_language.base.domain;
+package com.aust.c_language.base.domain;
 
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
