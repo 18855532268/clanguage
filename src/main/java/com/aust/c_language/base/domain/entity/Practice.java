@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 实践教学表(Practice)实体类
  *
  * @author makejava
- * @since 2020-05-28 23:42:06
+ * @since 2020-05-29 00:07:51
  */
 public class Practice implements Serializable {
-    private static final long serialVersionUID = 703441127959411237L;
+    private static final long serialVersionUID = -81363354361310145L;
     
     private Integer id;
     /**

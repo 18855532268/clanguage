@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 多媒体课件地址，参考资料地址(Multimedia)实体类
  *
  * @author makejava
- * @since 2020-05-28 23:42:05
+ * @since 2020-05-29 00:07:50
  */
 public class Multimedia implements Serializable {
-    private static final long serialVersionUID = -18670266412183487L;
+    private static final long serialVersionUID = 376066324050939511L;
     
     private Integer id;
     

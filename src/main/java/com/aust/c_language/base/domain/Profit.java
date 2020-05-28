@@ -25,6 +25,8 @@ public class Profit implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    private Integer userId;
     
     private String name;
     
