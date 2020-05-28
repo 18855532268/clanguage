@@ -43,6 +43,14 @@ public class Course implements Serializable {
     private String logo;
 
     private String introduce;
+    /**
+     * 课程公告
+     */
+    private String announ;
+    /**
+     * 课程状态 1  表示存在  9表示删除
+     */
+    private Integer status;
 
     private static final long serialVersionUID = 1L;
 }
