@@ -1,16 +1,17 @@
 package com.aust.c_language.base.domain;
 
-import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * course
- * @author 
+ *
+ * @author
  */
 @Data
 @Builder
@@ -32,8 +33,8 @@ public class Course implements Serializable {
 
     /**
      * 课程标号唯一
-标号格式为：学院标号_专业标号_教师标号_随机码
-（AAAA_BBBB_CCCC_DDDD）
+     * 标号格式为：学院标号_专业标号_教师标号_随机码
+     * （AAAA_BBBB_CCCC_DDDD）
      */
     private Integer no;
 
@@ -46,7 +47,11 @@ public class Course implements Serializable {
     /**
      * 课程公告
      */
-    private String announ;
+    private String notify;
+
+    private String seminar;
+
+    private String reply;
     /**
      * 课程状态 1  表示存在  9表示删除
      */

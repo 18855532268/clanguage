@@ -1,4 +1,4 @@
-package com.aust.c_language.base.domain.entity;
+package com.aust.c_language.base.entity;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 实践教学表(Practice)实体类
  *
  * @author makejava
- * @since 2020-05-29 00:07:51
+ * @since 2020-05-30 14:39:10
  */
 public class Practice implements Serializable {
-    private static final long serialVersionUID = -81363354361310145L;
+    private static final long serialVersionUID = -22262479279401759L;
     
     private Integer id;
     /**

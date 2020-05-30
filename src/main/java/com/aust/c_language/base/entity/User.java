@@ -1,4 +1,4 @@
-package com.aust.c_language.base.domain.entity;
+package com.aust.c_language.base.entity;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 用户表(User)实体类
  *
  * @author makejava
- * @since 2020-05-29 00:07:52
+ * @since 2020-05-30 14:39:10
  */
 public class User implements Serializable {
-    private static final long serialVersionUID = -45691037561232307L;
+    private static final long serialVersionUID = 100187885358575887L;
     
     private Integer id;
     /**

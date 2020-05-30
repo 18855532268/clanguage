@@ -1,4 +1,4 @@
-package com.aust.c_language.base.domain.entity;
+package com.aust.c_language.base.entity;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 成果表，展示研究成果(Profit)实体类
  *
  * @author makejava
- * @since 2020-05-29 00:07:51
+ * @since 2020-05-30 14:39:10
  */
 public class Profit implements Serializable {
-    private static final long serialVersionUID = -33280520591565039L;
+    private static final long serialVersionUID = -10693817627214765L;
     
     private Integer id;
     /**

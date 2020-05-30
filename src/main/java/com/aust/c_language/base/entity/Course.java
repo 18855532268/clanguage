@@ -1,4 +1,4 @@
-package com.aust.c_language.base.domain.entity;
+package com.aust.c_language.base.entity;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 课程表(Course)实体类
  *
  * @author makejava
- * @since 2020-05-29 00:07:47
+ * @since 2020-05-30 14:39:08
  */
 public class Course implements Serializable {
-    private static final long serialVersionUID = 924309948274959028L;
+    private static final long serialVersionUID = -82154222969962737L;
     
     private Integer id;
     
@@ -17,7 +17,7 @@ public class Course implements Serializable {
     /**
     * 授课教师ID
     */
-    private Integer teacher;
+    private String teaName;
     /**
     * 课程标号唯一
 标号格式为：学院标号_专业标号_教师标号_随机码
@@ -33,7 +33,11 @@ public class Course implements Serializable {
     /**
     * 课程公告
     */
-    private String announ;
+    private String notify;
+    
+    private String seminar;
+    
+    private String reply;
     
     private Integer status;
 
@@ -54,12 +58,12 @@ public class Course implements Serializable {
         this.name = name;
     }
 
-    public Integer getTeacher() {
-        return teacher;
+    public String getTeaName() {
+        return teaName;
     }
 
-    public void setTeacher(Integer teacher) {
-        this.teacher = teacher;
+    public void setTeaName(String teaName) {
+        this.teaName = teaName;
     }
 
     public Integer getNo() {
@@ -86,12 +90,28 @@ public class Course implements Serializable {
         this.introduce = introduce;
     }
 
-    public String getAnnoun() {
-        return announ;
+    public String getNotify() {
+        return notify;
     }
 
-    public void setAnnoun(String announ) {
-        this.announ = announ;
+    public void setNotify(String notify) {
+        this.notify = notify;
+    }
+
+    public String getSeminar() {
+        return seminar;
+    }
+
+    public void setSeminar(String seminar) {
+        this.seminar = seminar;
+    }
+
+    public String getReply() {
+        return reply;
+    }
+
+    public void setReply(String reply) {
+        this.reply = reply;
     }
 
     public Integer getStatus() {

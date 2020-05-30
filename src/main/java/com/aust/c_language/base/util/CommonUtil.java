@@ -2,6 +2,7 @@ package com.aust.c_language.base.util;
 
 
 import com.aust.c_language.base.constant.Constants;
+import com.aust.c_language.base.exception.ErrorRollbackException;
 import org.apache.commons.lang.StringUtils;
 
 import javax.sound.sampled.AudioFileFormat;
@@ -147,5 +148,19 @@ public class CommonUtil {
         out.flush();
         out.close();
         sourceFile.delete();
+    }
+    /**
+     * 判断输入参数是否为空
+     *
+     * @param objects
+     */
+    public static void checkParameters(Object... objects) {
+        if (objects != null) {
+            for (Object o : objects) {
+                if (o == null || "".equals(o)) {
+                    throw new ErrorRollbackException("参数为空");
+                }
+            }
+        }
     }
 }

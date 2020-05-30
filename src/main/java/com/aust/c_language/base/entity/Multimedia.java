@@ -1,4 +1,4 @@
-package com.aust.c_language.base.domain.entity;
+package com.aust.c_language.base.entity;
 
 import java.io.Serializable;
 
@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 多媒体课件地址，参考资料地址(Multimedia)实体类
  *
  * @author makejava
- * @since 2020-05-29 00:07:50
+ * @since 2020-05-30 14:39:10
  */
 public class Multimedia implements Serializable {
-    private static final long serialVersionUID = 376066324050939511L;
+    private static final long serialVersionUID = 292998704976304488L;
     
     private Integer id;
     
