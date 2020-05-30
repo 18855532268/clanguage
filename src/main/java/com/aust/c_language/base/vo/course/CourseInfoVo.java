@@ -1,6 +1,6 @@
 package com.aust.c_language.base.vo.course;
 
-import com.aust.c_language.base.vo.teacher.TeacherVo;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,7 +20,7 @@ public class CourseInfoVo {
     /**
      * 师资队伍
      */
-    private List<TeacherVo> teacherTroops;
-    private
+//    private List<TeacherVo> teacherTroops;
+//    private
 
 }

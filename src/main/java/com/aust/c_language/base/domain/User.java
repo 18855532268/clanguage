@@ -30,6 +30,13 @@ public class User implements Serializable {
     */
     private String name;
     /**
+     * 英文名
+     */
+    @Column(name = "english_name")
+    private String englishName;
+    private String img;
+
+    /**
     * 性别
     */
     private String gander;

@@ -6,16 +6,22 @@ import java.io.Serializable;
  * 用户表(User)实体类
  *
  * @author makejava
- * @since 2020-05-30 14:39:10
+ * @since 2020-05-31 00:40:48
  */
 public class User implements Serializable {
-    private static final long serialVersionUID = 100187885358575887L;
+    private static final long serialVersionUID = 430584249846756422L;
     
     private Integer id;
     /**
     * 用户真实姓名
     */
     private String name;
+    /**
+    * 英文名
+    */
+    private String englishName;
+    
+    private String img;
     /**
     * 性别
     */
@@ -52,6 +58,22 @@ public class User implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEnglishName() {
+        return englishName;
+    }
+
+    public void setEnglishName(String englishName) {
+        this.englishName = englishName;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getGander() {

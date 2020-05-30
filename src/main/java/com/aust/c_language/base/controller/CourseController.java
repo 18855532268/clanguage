@@ -20,4 +20,8 @@ public class CourseController {
     public ReturnVO getCouerseInfo(String id) {
         return ReturnVO.getSuccess();
     }
+    @GetMapping("/getCourse")
+    public ReturnVO getCouerse(String id) {
+        return ReturnVO.getSuccess(courseService.getCourse(Integer.valueOf(id)));
+    }
 }

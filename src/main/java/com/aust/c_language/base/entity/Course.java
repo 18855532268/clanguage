@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 课程表(Course)实体类
  *
  * @author makejava
- * @since 2020-05-30 14:39:08
+ * @since 2020-05-30 17:15:37
  */
 public class Course implements Serializable {
-    private static final long serialVersionUID = -82154222969962737L;
+    private static final long serialVersionUID = -52313906537115372L;
     
     private Integer id;
     

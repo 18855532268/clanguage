@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 成果表，展示研究成果(Profit)实体类
  *
  * @author makejava
- * @since 2020-05-30 14:39:10
+ * @since 2020-05-31 01:03:25
  */
 public class Profit implements Serializable {
-    private static final long serialVersionUID = -10693817627214765L;
+    private static final long serialVersionUID = 503582204521789929L;
     
     private Integer id;
     /**
@@ -24,6 +24,10 @@ public class Profit implements Serializable {
     * 成果封面
     */
     private String img;
+    /**
+    * 课程ID
+    */
+    private Integer couId;
 
 
     public Integer getId() {
@@ -64,6 +68,14 @@ public class Profit implements Serializable {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public Integer getCouId() {
+        return couId;
+    }
+
+    public void setCouId(Integer couId) {
+        this.couId = couId;
     }
 
 }

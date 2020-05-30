@@ -15,8 +15,8 @@ public class Constants {
     /**
      * 默认分页
      */
-    public final static String PAGE_DEFAULT_START = "1";
-    public final static String PAGE_DEFAULT_SIZE = "10";
+    public final static String PAGE_DEFAULT_START = "0";
+    public final static String PAGE_DEFAULT_SIZE = "4";
 
     //认证价格
     public final static long PRICE_CERT = 398 * 100;

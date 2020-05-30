@@ -25,19 +25,17 @@ public class Course implements Serializable {
     private Integer id;
 
     private String name;
-
     /**
      * 授课教师ID
      */
-    private Integer teacher;
-
+    @Column(name = "tea_name")
+    private String teaName;
     /**
      * 课程标号唯一
-     * 标号格式为：学院标号_专业标号_教师标号_随机码
-     * （AAAA_BBBB_CCCC_DDDD）
+     标号格式为：学院标号_专业标号_教师标号_随机码
+     （AAAA_BBBB_CCCC_DDDD）
      */
     private Integer no;
-
     /**
      * 封面图片地址
      */
@@ -52,9 +50,7 @@ public class Course implements Serializable {
     private String seminar;
 
     private String reply;
-    /**
-     * 课程状态 1  表示存在  9表示删除
-     */
+
     private Integer status;
 
     private static final long serialVersionUID = 1L;
