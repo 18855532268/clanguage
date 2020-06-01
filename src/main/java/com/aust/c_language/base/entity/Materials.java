@@ -6,10 +6,10 @@ import java.io.Serializable;
  * 教学资料(Materials)实体类
  *
  * @author makejava
- * @since 2020-05-31 00:05:57
+ * @since 2020-05-31 15:47:50
  */
 public class Materials implements Serializable {
-    private static final long serialVersionUID = -91694706477473274L;
+    private static final long serialVersionUID = -62092685574884050L;
     
     private Integer id;
     
@@ -26,6 +26,10 @@ public class Materials implements Serializable {
     * 课程教案文件地址
     */
     private String lesson;
+    /**
+    * 上传用户ID
+    */
+    private Integer userId;
 
 
     public Integer getId() {
@@ -66,6 +70,14 @@ public class Materials implements Serializable {
 
     public void setLesson(String lesson) {
         this.lesson = lesson;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
 }

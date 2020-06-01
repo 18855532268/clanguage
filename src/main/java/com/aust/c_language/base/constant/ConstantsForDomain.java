@@ -12,4 +12,11 @@ public class ConstantsForDomain {
      */
     public final static Integer NORMAL = 1;
     public final static Integer DELETE = 9;
+//
+//    /**
+//     *
+//     */
+//    public final static Integer DELETE = 9;
+//    public final static Integer DELETE = 9;
+//    public final static Integer DELETE = 9;
 }

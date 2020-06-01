@@ -163,4 +163,9 @@ public class CommonUtil {
             }
         }
     }
+
+    public static String pathToFilename(String path){
+        String substring = path.substring(path.lastIndexOf("/") + 1);
+        return substring;
+    }
 }

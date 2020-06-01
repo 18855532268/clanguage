@@ -26,6 +26,7 @@ public class Materials implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "cou_id")
     private Integer couId;
     /**
     * 教学大纲文件地址
@@ -39,46 +40,9 @@ public class Materials implements Serializable {
     * 课程教案文件地址
     */
     private String lesson;
-
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getCouId() {
-        return couId;
-    }
-
-    public void setCouId(Integer couId) {
-        this.couId = couId;
-    }
-
-    public String getPoint() {
-        return point;
-    }
-
-    public void setPoint(String point) {
-        this.point = point;
-    }
-
-    public String getPlan() {
-        return plan;
-    }
-
-    public void setPlan(String plan) {
-        this.plan = plan;
-    }
-
-    public String getLesson() {
-        return lesson;
-    }
-
-    public void setLesson(String lesson) {
-        this.lesson = lesson;
-    }
-
+    /**
+     * 上传用户ID
+     */
+    @Column(name = "user_id")
+    private Integer userId;
 }
