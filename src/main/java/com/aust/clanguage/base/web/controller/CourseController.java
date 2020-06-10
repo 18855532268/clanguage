@@ -28,13 +28,14 @@ public class CourseController {
 
 
     @GetMapping("/course/info")
-    @ApiOperation(value = "课程详情" ,notes = "传入课程id")
-    @ApiImplicitParam(value = "信息id",name = "id",paramType = "query",dataType = "String",required=true)
+    @ApiOperation(value = "课程详情", notes = "传入课程id")
+    @ApiImplicitParam(value = "信息id", name = "id", paramType = "query", dataType = "String", required = true)
     public ReturnVO getCourseInfo(String id) {
         return ReturnVO.getSuccess();
     }
-    @ApiOperation(value = "获取课程" ,notes = "传入课程id")
-    @ApiImplicitParam(value = "信息id",name = "id",paramType = "query",dataType = "String",required=true)
+
+    @ApiOperation(value = "获取课程", notes = "传入课程id")
+    @ApiImplicitParam(value = "信息id", name = "id", paramType = "query", dataType = "String", required = true)
     @GetMapping("/getCourse")
     public ReturnVO getCourse(String id) {
         return ReturnVO.getSuccess(courseService.getCourse(Integer.valueOf(id)));
@@ -42,26 +43,23 @@ public class CourseController {
 
     @SneakyThrows
     @PostMapping("/uploadMaterials")
-    public ReturnVO uploadMaterials(Integer couId, MultipartFile pointFile,MultipartFile planFile, MultipartFile lessonFile, Integer userId) {
+    public ReturnVO uploadMaterials(Integer couId, MultipartFile pointFile, MultipartFile planFile, MultipartFile lessonFile, Integer userId) {
         courseService.addMaterials(couId, pointFile, planFile, lessonFile, userId);
         return ReturnVO.getSuccess();
     }
-
+    @ApiOperation(value = "上传课件", notes = "传入couId，pointFile，userId")
     @SneakyThrows
     @PostMapping("/uploadMaterialsPoint")
     public ReturnVO uploadMaterialsPoint(Integer couId, MultipartFile pointFile, Integer userId) {
-        log.info("id：{}", couId);
-        log.info("file:{}", JSONObject.toJSONString(pointFile.getName()));
-        log.info("userId: {}",  userId);
         courseService.uploadMaterialsPoint(couId, pointFile, userId);
         return ReturnVO.getSuccess();
     }
-
+    @ApiOperation(value = "获取课件url", notes = "传入课程id")
+    @ApiImplicitParam(value = "couId", name = "couId", paramType = "query", dataType = "String", required = true)
     @GetMapping("/getMaterials")
     public ReturnVO getMaterials(Integer couId) {
         return ReturnVO.getSuccess(courseService.getMaterials(couId));
     }
-
 
 
 }

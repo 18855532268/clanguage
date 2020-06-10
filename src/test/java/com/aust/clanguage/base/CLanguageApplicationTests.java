@@ -1,13 +1,13 @@
 //package com.aust.c_language.base;
 //
-//import com.aust.c_language.base.domain.Course;
-//import com.aust.c_language.base.domain.Project;
-//import com.aust.c_language.base.mapper.CourseMapper;
-//import com.aust.c_language.base.mapper.ProjectMapper;
-//import com.aust.c_language.base.service.ProfitService;
-//import com.aust.c_language.base.service.UserService;
-//import com.aust.c_language.base.vo.profit.ProfitVo;
-//import com.aust.c_language.base.vo.user.UserVo;
+//import Course;
+//import Project;
+//import CourseMapper;
+//import ProjectMapper;
+//import ProfitService;
+//import UserService;
+//import ProfitVo;
+//import UserVo;
 //import lombok.extern.slf4j.Slf4j;
 //
 //
