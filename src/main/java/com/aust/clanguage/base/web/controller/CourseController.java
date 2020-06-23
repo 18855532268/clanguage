@@ -55,7 +55,7 @@ public class CourseController {
         return ReturnVO.getSuccess();
     }
     @ApiOperation(value = "获取课件url", notes = "传入课程id")
-    @ApiImplicitParam(value = "couId", name = "couId", paramType = "query", dataType = "String", required = true)
+    @ApiImplicitParam(value = "couId", name = "couId", paramType = "query", dataType = "Integer", required = true)
     @GetMapping("/getMaterials")
     public ReturnVO getMaterials(Integer couId) {
         return ReturnVO.getSuccess(courseService.getMaterials(couId));

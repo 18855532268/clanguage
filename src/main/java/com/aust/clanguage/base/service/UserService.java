@@ -26,4 +26,9 @@ public class UserService {
         log.info("人员返回：{}", JSONObject.toJSONString(vos));
         return vos;
     }
+
+    public User userLogin(String name, String password) {
+        userMapper.findUser
+
+    }
 }

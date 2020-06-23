@@ -78,6 +78,11 @@
         <!--            <version>0.9.0</version>-->
         <!--        </dependency>-->
         <!-- 工具类依赖 -->
+        <!-- 钉钉依赖包 -->
+<!--        <dependency>-->
+<!--            <groupId>taobao-sdk-java</groupId>-->
+<!--            <artifactId>taobao-sdk-java</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
