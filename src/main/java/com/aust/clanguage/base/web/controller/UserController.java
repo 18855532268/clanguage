@@ -67,7 +67,7 @@ public class UserController {
 
     public ReturnVO userLogin(@RequestBody User user){
         userService.userLogin(user.getName(), user.getPassword());
-        return ReturnVO.getSuccess()
+        return ReturnVO.getSuccess();
     }
 
 }
